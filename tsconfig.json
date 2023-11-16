@@ -1,0 +1,40 @@
+{
+  "extends": "./tsconfig.project.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/typings"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "node_modules/g-lang-tools/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
