@@ -2,16 +2,10 @@ import { defineConfig } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 const path = require('path');
 
-const port = 8080;
 const resolve = dir => path.join(__dirname, dir);
 
 export default defineConfig({
   plugins: [pluginReact()],
-  dev: {
-    port,
-    https: true,
-    historyApiFallback: true,
-  },
   source: {
     alias: {
       '@': resolve('src/')
